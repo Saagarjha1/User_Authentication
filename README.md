@@ -28,6 +28,7 @@ This project enables:
 ├── /routes          # Auth routes (signup, login)
 ├── /middleware      # JWT verification middleware
 ├── .env             # Environment variables
+├── db.js            # DB connection
 ├── server.js        # App entry point
 └── README.md
 ```
