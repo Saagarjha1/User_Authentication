@@ -26,7 +26,6 @@ This project enables:
 │
 ├── /models          # User schema
 ├── /routes          # Auth routes (signup, login)
-├── /controllers     # Controller logic
 ├── /middleware      # JWT verification middleware
 ├── .env             # Environment variables
 ├── server.js        # App entry point
@@ -157,6 +156,4 @@ MIT License
 ## 📬 Contact
 
 For questions or contributions:
-
-- GitHub: [your-username](https://github.com/your-username)
-- Email: [you@example.com](mailto:you@example.com)
+- Email: [sagarjha0999@gmail.com](mailto:sagarjha0999@gmail.com)
