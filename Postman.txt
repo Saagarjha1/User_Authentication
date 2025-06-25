@@ -1,0 +1,39 @@
+✅ 1. Signup (Register) Request
+🔗 URL:
+POST http://localhost:3000/api/signup
+🧾 Headers:
+Content-Type: application/json
+📤 Body (raw → JSON):
+{
+  "username": "john_doe",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securePassword123"
+}
+✅ Expected Response (Example):
+{
+    "response": {
+        "username": "john_doe",
+        "name": "John Doe",
+        "password": "$2b$10$Iat/Rx9vi5ibo6OvasvIaeE.QCLfnoYm9oxP55Ksx0Z9sz.lbdnzi",
+        "email": "john@example.com",
+        "_id": "685b90c83441419e1bc308b1",
+        "__v": 0
+    },
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWI5MGM4MzQ0MTQxOWUxYmMzMDhiMSIsInVzZXJuYW1lIjoiam9obl9kb2UiLCJpYXQiOjE3NTA4MzEzMDQsImV4cCI6MTc1MDgzNDkwNH0.RPCmrTA7gQRuDuQ7dOsN-otwUS--uBygNcWeT_OYXww"
+}
+
+✅ 2. Login Request
+🔗 URL:
+POST http://localhost:3000/api/login
+🧾 Headers:
+Content-Type: application/json
+📤 Body (raw → JSON):
+{
+  "username": "john_doe",
+  "password": "securePassword123"
+}
+✅ Expected Response:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWI5MGM4MzQ0MTQxOWUxYmMzMDhiMSIsInVzZXJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE3NTA4MzE0NDUsImV4cCI6MTc1MDgzNTA0NX0.sO91nSNAguHatpHxikgXGhpkVWGgc3gF6UWTL65_78E"
+}
